@@ -1,0 +1,53 @@
+version: "3.8"
+services:
+  db:
+    image: mysql:8
+    ports:
+      - 3306:3306
+
+    restart: always
+    environment:
+      MYSQL_DATABASE: university_system
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./db_data:/var/lib/mysql
+    networks:
+      - my-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8001:8080
+    networks:
+      - my-network
+
+  backend:
+    build: ./universityManagementServer
+    ports:
+      - 8080:8080
+    environment:
+      PORT: 8080
+      DB_NAME: university_system
+      DB_PASSWORD: root
+      DB_HOST: db
+      DB_USER: root
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - my-network
+
+  frontend:
+    build: ./universityManagementFrontend
+    ports:
+      - 5176:5176
+
+networks:
+  my-network:
+    driver: bridge
