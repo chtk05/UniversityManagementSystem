@@ -16,7 +16,7 @@ The following is the example UI and small features :-
 <img width="1440" alt="image" src="https://github.com/chtk05/UniversityManagementSystem/assets/80698340/2f6aa3c0-c6ab-4e98-9fee-4e8a1dbb0ff3">
 <img width="1440" alt="image" src="https://github.com/chtk05/UniversityManagementSystem/assets/80698340/7b039091-2af4-4bc9-9209-2e28a843419e">
 <img width="1440" alt="image" src="https://github.com/chtk05/UniversityManagementSystem/assets/80698340/bad4dac0-01ee-4569-af07-2ed3b387fddc">
-<img width="1440" alt="image" src="https://github.com/chtk05/UniversityManagementSystem/assets/80698340/6173ab86-7159-471c-936c-1f33f2a50a8f">
+
 
 
 
