@@ -1,4 +1,4 @@
-<img width="1108" alt="image" src="https://github.com/chtk05/UniversityManagementSystem/assets/80698340/c3e5e9b6-e88c-4fef-9acf-0e7e1607729d"><img width="1108" alt="image" src="https://github.com/chtk05/UniversityManagementSystem/assets/80698340/1732697c-ef20-4ec8-bb0d-6b878734d054">**University Management System (Backend)**
+**University Management System (Backend)**
 This is The University management system which has the following features
 - Register , log-in
 - Roles (Student / Teacher / Admin)
